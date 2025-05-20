@@ -77,7 +77,7 @@ const About = () => {
           <div className="w-full md:w-1/3 flex justify-center">
             <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-indigo-500 shadow-lg">
               <div className="w-full h-full bg-gray-300 flex items-center justify-center text-gray-500">
-                <span className="text-4xl"><img src='src\components\sections\img4.jpg' alt="📸" /></span>
+                <span className="text-4xl"><img src='public\img4.jpg' alt="📸" /></span>
               </div>
             </div>
           </div>
