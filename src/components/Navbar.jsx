@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
+import { FaDownload } from 'react-icons/fa';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,6 +11,16 @@ const Navbar = () => {
     { name: 'Projects', target: 'projects' },
     { name: 'Contact', target: 'contact' }
   ];
+
+  const handleDownload = () => {
+    const resumeUrl = '/Anshul_Singh_Resume.pdf';
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'Anshul_Singh_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <>
@@ -23,7 +34,6 @@ const Navbar = () => {
           >
             &times;
           </button>
-
           {navItems.map((item) => (
             <Link
               key={item.target}
@@ -37,6 +47,14 @@ const Navbar = () => {
               {item.name}
             </Link>
           ))}
+        
+          <button
+            onClick={handleDownload}
+            className="flex items-center gap-2 mt-6 px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+          >
+            <FaDownload />
+            Download Resume
+          </button>
         </div>
       )}
 
@@ -76,6 +94,16 @@ const Navbar = () => {
                   />
                 </motion.div>
               ))}
+              
+              <motion.button
+                onClick={handleDownload}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors text-sm"
+              >
+                <FaDownload className="text-sm" />
+                Resume
+              </motion.button>
             </div>
 
             <div className="md:hidden flex items-center">
