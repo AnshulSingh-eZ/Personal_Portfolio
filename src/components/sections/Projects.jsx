@@ -7,37 +7,43 @@ const Projects = () => {
       title: "Hospital Management System",
       description: "HMS for managing the admission, appointment and even billing of patients.",
       tags: ["HTML/CSS", "JavaScript", "NodeJS"],
-      link: "https://github.com/AnshulSingh-eZ/Hospital-Management"
+      link: "https://github.com/AnshulSingh-eZ/Hospital-Management",
+      icon: "🏥"
     },
     {
       title: "Realtime Emotion Detector",
       description: "Can detect 7 emotions with 96% accuracy and no delay.",
       tags: ["CNN", "Python"],
-      link: "https://github.com/AnshulSingh-eZ/Real-Time-Emotion-Detector-OpenCV-Python"
+      link: "https://github.com/AnshulSingh-eZ/Real-Time-Emotion-Detector-OpenCV-Python",
+      icon: "😊"
     },
     {
       title: "Realtime Human Detector",
       description: "Counts the number of person in the video at any instant.",
       tags: ["Yolov4", "Python"],
-      link: "https://github.com/AnshulSingh-eZ/Real-Time-Human-Detection-Yolov4-tiny"
+      link: "https://github.com/AnshulSingh-eZ/Real-Time-Human-Detection-Yolov4-tiny",
+      icon: "🧍"
     },
     {
       title: "OMR_Grading",
       description: "Processes the OMR sheet to evaluate the results.",
       tags: ["HoughCircle", "Canny", "Python"],
-      link: "https://github.com/AnshulSingh-eZ/OMR_Grading_OpenCV"
+      link: "https://github.com/AnshulSingh-eZ/OMR_Grading_OpenCV",
+      icon: "📄"
     },
     {
       title: "Lane Detection",
       description: "Responsive portfolio built with modern tech stack",
       tags: ["React", "Tailwind", "Framer Motion"],
-      link: "https://github.com/AnshulSingh-eZ/Lane-Detection-Open-CV-Python-"
+      link: "https://github.com/AnshulSingh-eZ/Lane-Detection-Open-CV-Python-",
+      icon: "🛣️"
     },
     {
       title: "OpenCV Angle Detector",
       description: "Detects angle between any 2 possible lines in the image.",
       tags: ["Countours", "Python"],
-      link: "https://github.com/AnshulSingh-eZ/OpenCV-Angle-Detector"
+      link: "https://github.com/AnshulSingh-eZ/OpenCV-Angle-Detector",
+      icon: "📐"
     }
   ];
 
@@ -66,7 +72,7 @@ const Projects = () => {
             >
               <div className="p-6">
                 <div className="text-blue-500 text-3xl mb-4 group-hover:text-blue-600 transition-colors">
-                  {index === 0 ? "🌦️" : index === 1 ? "📝" : "🖥️"}
+                  {project.icon}
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
                   {project.title}
