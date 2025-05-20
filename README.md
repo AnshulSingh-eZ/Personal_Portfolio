@@ -1,4 +1,4 @@
-# React + Vite
+# React + Tailwind + Vite
 
 This is my Personal Protfolio to showcase my skills and achievements build using React.js.
 
